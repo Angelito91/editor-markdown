@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background-color: #14161f;
+  min-height: 100vh;
+}
+
+.contenido {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.titulo {
+  text-align: center;
+  color: rgb(224, 73, 224);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.gruop-button,
+.gruop-documents {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.gruop-documents {
+  padding: 10px 0;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px 20px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.055);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: #383c4d;
+  }
+}
+
+.active {
+  background-color: #383c4d;
+}
+
+.input {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.267);
+  border-radius: 10px;
+
+  &:focus {
+    outline: 0;
+    border: 1px solid rgb(61, 119, 243);
+  }
+}
